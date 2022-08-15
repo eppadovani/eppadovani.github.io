@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 100px 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.player {
+    text-align: center;
+}
+
+iframe {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+h1, h4 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial;
+}
+
+h1 {
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 6%;
+    background: black;
+}
+
+.goback {
+    width: 50px;
+    height: 50px;
+
+}
+
+.title {
+    
+
+    text-align: center;
+    width: 100%;
+}

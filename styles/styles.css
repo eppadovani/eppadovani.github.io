@@ -1,3 +1,7 @@
+body {
+    cursor: url('cursor-bg.png'), auto !important;
+}
+
 .hero {
     max-width: 100%;
     max-height: 100%;
@@ -8,10 +12,12 @@
 
     gap: 40px;
 
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .music {
+    margin-top: 3%;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,19 +102,19 @@
 
 .btn:hover {
     background-image: linear-gradient( to right, 
-      #E7484F,
-      #E7484F 16.65%,
-      #F68B1D 16.65%,
-      #F68B1D 33.3%,
-      #FCED00 33.3%,
-      #FCED00 49.95%,
-      #009E4F 49.95%,
-      #009E4F 66.6%,
-      #00AAC3 66.6%,
-      #00AAC3 83.25%,
-      #732982 83.25%,
-      #732982 100%,
-      #E7484F 100% 
+      #f01621,
+      #f01621 16.65%,
+      #f1cf0f 16.65%,
+      #f1cf0f 33.3%,
+      #f01621 33.3%,
+      #f01621 49.95%,
+      #f1cf0f 49.95%,
+      #f1cf0f 66.6%,
+      #f01621 66.6%,
+      #f01621 83.25%,
+      #f1cf0f 83.25%,
+      #f1cf0f 100%,
+      #f01621 100% 
     );
 
   animation: slidebg 2s linear infinite;

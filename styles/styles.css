@@ -101,20 +101,21 @@ body {
 }
 
 .btn:hover {
-    background-image: linear-gradient( to right, 
-      #f01621,
-      #f01621 16.65%,
-      #f1cf0f 16.65%,
-      #f1cf0f 33.3%,
-      #f01621 33.3%,
-      #f01621 49.95%,
-      #f1cf0f 49.95%,
-      #f1cf0f 66.6%,
-      #f01621 66.6%,
-      #f01621 83.25%,
-      #f1cf0f 83.25%,
-      #f1cf0f 100%,
-      #f01621 100% 
+    background-image: linear-gradient( to right,
+    #FCED00,
+    #FCED00 16.65%,
+    #009E4F 16.65%,
+    #009E4F 33.3%,
+      #FCED00 33.3%,
+      #FCED00 49.95%,
+      #009E4F 49.95%,
+      #009E4F 66.6%,
+      #FCED00 66.6%,
+      #FCED00 83.25%,
+      #009E4F 83.25%,
+      #009E4F 100%,
+      #FCED00 100%
+
     );
 
   animation: slidebg 2s linear infinite;

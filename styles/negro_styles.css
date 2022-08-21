@@ -1,4 +1,5 @@
 body {
+    cursor: url('cursor-bg.png'), auto !important;
     margin: 0;
 }
 

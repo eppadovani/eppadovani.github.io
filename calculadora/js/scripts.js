@@ -12,7 +12,8 @@ for(let num of numbers) {
     num.onclick = function() {
         if(operation) {
             display.value = num.value;
-        } else if(display.value == "0.") {
+            operation = false;
+        } else if(display.value.includes("0.")) {
             display.value += num.value;
         } else if(display.value == 0) {
             display.value = num.value;
@@ -37,7 +38,7 @@ for(let op of operator) {
                 previousValue = display.value;
                 
                 result.onclick = function() {
-                    display.value = (parseInt(previousValue) + parseInt(display.value));
+                    display.value = (parseFloat(previousValue) + parseFloat(display.value));
                     operation = false;
 
                     previousValue = "";

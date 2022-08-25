@@ -28,7 +28,7 @@ body {
     color: red;
 }
 
-.mostrador {
+.mostrador:disabled {
     font-family: 'Montserrat', sans-serif;
 
     width: 100%;

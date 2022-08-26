@@ -7,6 +7,7 @@ html {
 
 body {
     background: #243441;
+    transition: background 0.2s linear;
 }
 
 * {
@@ -30,7 +31,6 @@ body {
 
 .mostrador:disabled {
     font-family: 'Montserrat', sans-serif;
-
     width: 100%;
     font-size: 5rem;
     height: 80px;
@@ -40,14 +40,12 @@ body {
     text-align: right;
     padding-right: 20px;
     padding-left: 10px;
-
     margin-bottom: 3%;
-
     border-radius: 20px;
 }
 
 .calculadora {
-
+    margin-top: 1%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -57,23 +55,14 @@ body {
 
 button {
     font-family: 'Montserrat', sans-serif;
-
     height: 60px;
     width: 60px;
     border-radius: 20px;
     font-size: 2rem;
-
-    /* background: #efefef; */
     background: #1616162c;
-    
     border: none;
-
-    /* color: #444; */
     color: rgb(228, 228, 228);
-
-
     font-weight: 700;
-    
     transition: .2s ease-in-out;
 }
 
@@ -84,6 +73,10 @@ button:hover {
 
 button:active {
     transform: scale(.9);
+}
+
+.operator:focus {
+    background-color: #ff9d2c;
 }
 
 .all-clear {
@@ -122,3 +115,62 @@ button:active {
     gap: 3%;
 
 }
+
+
+
+.container {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .label {
+    background-color: #101011;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 50px;
+    height: 26px;
+    width: 50px;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label {
+    background-color: #ebcab3;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+    background-color: #E56000;
+}
+
+body.light {
+    background-color: #ffe2cd;
+    color: rgb(34, 34, 34);
+    transition: background 0.2s linear;
+}
+
+body.light .calculadora button.number {
+    background-color: #ebcab3;
+    color: rgb(34, 34, 34);
+}
+
+

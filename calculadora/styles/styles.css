@@ -188,4 +188,19 @@ body.light .calculadora button.decimal {
     color: rgb(34, 34, 34);
 }
 
+body.light .calculadora button.number:hover {
+    background-color: #9754fc;
+    color: white;
+}
+
+body.light .calculadora button.operator:hover {
+    background-color: #9754fc;
+    color: white;
+}
+
+body.light .calculadora button.decimal:hover {
+    background-color: #9754fc;
+    color: white;
+}
+
 

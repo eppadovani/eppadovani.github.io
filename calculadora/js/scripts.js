@@ -50,6 +50,54 @@ for(let op of operator) {
                 }
 
                 break;
+            
+            case "-": 
+                operation = true;
+
+                previousValue = display.value;
+                
+                result.onclick = function() {
+                    display.value = (parseFloat(previousValue) - parseFloat(display.value));
+                    
+                    operation = false;
+                    resultClicked = true;
+
+                    previousValue = "";
+                }
+
+                break;
+            
+            case "*": 
+                operation = true;
+
+                previousValue = display.value;
+                
+                result.onclick = function() {
+                    display.value = (parseFloat(previousValue) * parseFloat(display.value));
+                    
+                    operation = false;
+                    resultClicked = true;
+
+                    previousValue = "";
+                }
+
+                break;
+            
+            case "/": 
+                operation = true;
+
+                previousValue = display.value;
+                
+                result.onclick = function() {
+                    display.value = (parseFloat(previousValue) / parseFloat(display.value));
+                    
+                    operation = false;
+                    resultClicked = true;
+
+                    previousValue = "";
+                }
+
+                break;
         }
     }
 }

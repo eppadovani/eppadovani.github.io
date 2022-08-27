@@ -173,4 +173,19 @@ body.light .calculadora button.number {
     color: rgb(34, 34, 34);
 }
 
+body.light .calculadora button.operator {
+    background-color: #ebcab3;
+    color: rgb(34, 34, 34);
+}
+
+body.light .calculadora button.operator:focus {
+    background-color: #ff9d2c;
+    color: rgb(34, 34, 34);
+}
+
+body.light .calculadora button.decimal {
+    background-color: #ebcab3;
+    color: rgb(34, 34, 34);
+}
+
 

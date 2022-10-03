@@ -1,0 +1,21 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 5rem;
+}
+
+.game-title {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.pongBoard {
+    background-color: black;
+}
